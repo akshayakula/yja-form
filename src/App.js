@@ -15,6 +15,8 @@ function App() {
   let [birth, setBirth] = useState("")
   let [diet, setDiet] = useState("")
   let [needs, setNeeds] = useState("")
+  let [address, setAddress] = useState("")
+  let [phone, setPhone] = useState("")
 
 
   const ref = firebase.firestore().collection("submissions")
