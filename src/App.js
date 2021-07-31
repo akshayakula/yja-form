@@ -21,7 +21,7 @@ function App() {
 
   const handleOnSubmit = async (event) => {
     event.preventDefault()
-    ref.doc(name).set({ "name": name, "email": email, "center": center, "dob": birth, "diet": diet, "needs": needs })
+    ref.doc(name).set({ "name": name, "email": email, "center": center, "dob": birth, "diet": diet, "needs": needs, "phone": phone, "address": address })
   }
 
 
@@ -34,13 +34,16 @@ function App() {
       Name: <input class="rounded-input" type="name" name="name" value={name} onChange={(event) => { setName(event.target.value) }} />
       <br></br>
       <br></br>
+      Date of Birth: <input class="rounded-input" type="date" name="birth" value={birth} onChange={(event) => { setBirth(event.target.value) }} />
+      <br></br>
+      <br></br>
+      Phone Number: <input class="rounded-input" type="phone" name="phone" value={phone} onChange={(event) => { setPhone(event.target.value) }} />
+      <br></br>
+      <br></br>
       Email: <input class="rounded-input" type="email" name="email" value={email} onChange={(event) => { setEmail(event.target.value) }} />
       <br></br>
       <br></br>
-      Center: <input class="rounded-input" type="center" name="center" value={center} onChange={(event) => { setCenter(event.target.value) }} />
-      <br></br>
-      <br></br>
-      Date of Birth: <input class="rounded-input" type="date" name="birth" value={birth} onChange={(event) => { setBirth(event.target.value) }} />
+      Address: <input class="rounded-input" type="address" name="address" value={address} onChange={(event) => { setAddress(event.target.value) }} />
       <br></br>
       <br></br>
       Dietary Preferences: <input class="rounded-input" type="diet" name="diet" value={diet} onChange={(event) => { setDiet(event.target.value) }} />
