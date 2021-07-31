@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.rounded-input {
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:1;
+  /* box-shadow:4px 4px 10px  */
+}
